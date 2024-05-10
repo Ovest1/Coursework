@@ -1,0 +1,63 @@
+.reg{
+    flex: 1 1 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    flex: 0 0  80%;
+    width: 80%;
+    border: 1px solid;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+form label{
+    flex: 1 1 100%;
+    margin-left: 1%;
+}
+form h1{
+    text-align: center;
+}
+form input{
+    height: 40px;
+    width: 50%;
+}
+form input:last-child{
+    margin-bottom: 2%;
+}
+form button{
+    height: 50px;
+    width: 20%;
+    margin-bottom: 2%;
+    cursor: pointer;
+    border: 1px solid;
+}
+@media(max-width:480px){
+    form{
+        align-items: center;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    form input{
+        width: 100%;
+        flex: 1 1 100%;
+    }
+    form p{
+        text-align: center;
+    }
+    form button{
+        width: 50%;
+        margin-top: 10%;
+    }
+}
+@media(min-width:481px) and (max-width:1000px){
+    form button{
+        width: 50%;
+        margin-top: 5%;
+    }
+}

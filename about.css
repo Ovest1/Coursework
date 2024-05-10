@@ -1,0 +1,25 @@
+.about{
+    flex: 1 1 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(pics/library-book-bookshelf-read.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: rgb(218, 216, 216);
+}
+.about h1{
+    /* display: inline; */
+    flex: 1 1 100%;
+    width: 100%;
+    text-align: center;
+}
+.about p{
+    font-size: 20pt;
+    background-color: rgba(4, 3, 1,0.5);
+    flex: 1 1 100%;
+    text-align: center;
+    /* color: rgb(200, 200, 200); */
+}

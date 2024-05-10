@@ -1,0 +1,298 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    flex: 1 1 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    /* height: 60px; */
+    border: 1px solid;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(249, 252, 239);
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.menu-button {
+    display: none;
+}
+
+header svg {
+    flex: 0 0 10%;
+    margin-top: 0.2%;
+    margin-left: 1%;
+    /* border: 1px solid; */
+}
+
+header .catalog-but,
+header .about-but {
+    flex: 1 1 35%;
+    height: 50px;
+    background: rgb(250, 236, 222);
+    /* border: 1px solid gray; */
+    border: none;
+    cursor: pointer;
+}
+
+header .catalog-but:hover,
+header .about-but:hover {
+    border: 2px solid gray;
+}
+
+header .catalog-but {
+    margin-left: 2%;
+    margin-right: 1%;
+}
+
+header .about-but {
+    margin-right: 2%;
+}
+
+header .reg {
+    flex: 1 1 3%;
+    width: 50px;
+    height: 50px;
+    margin-right: 1%;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(249, 252, 239);
+    background-image: url(pics/profile-2user-svgrepo-com.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header .reg:hover {
+    border: 2px solid gray;
+}
+
+footer {
+    flex: 1 1 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(249, 252, 239);
+}
+
+footer p {
+    flex: 1 1 100%;
+    text-align: center;
+    font-size: 15pt;
+}
+
+@media(max-width:480px) {
+    .container {
+        flex-flow: column wrap;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-flow: column wrap;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.3s ease-in-out;
+        padding: 0;
+        text-align: left;
+        transform: translateY(-100%);
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 50px;
+        margin-left: 0;
+        margin-right: 15%;
+    }
+
+    .mobile-menu ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1 1 100%;
+        list-style-type: none;
+        height: 30px;
+        border: 1px solid #171A5B;
+        margin-bottom: 5%;
+        cursor: pointer;
+    }
+
+    .open {
+        transform: translateY(0);
+    }
+
+    .menu-button {
+        display: block;
+        height: 40px;
+        width: 40px;
+        margin-top: 0;
+        margin-left: 0%;
+        margin-right: 1%;
+        border: none;
+        background-color: white;
+        background-image: url(pics/menu-svgrepo-com.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .menu-button:hover {
+        border: 1px solid #171A5B;
+    }
+
+    .mobile-menu .close-menu {
+        display: block;
+        /* flex: 1 1 100%; */
+        height: 40px;
+        width: 40px;
+        background-image: url(pics/close-ellipse-svgrepo-com.svg);
+        background-repeat: no-repeat;
+        background-color: white;
+        border: none;
+        background-size: 100%;
+        cursor: pointer;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+
+    .mobile-menu .close-menu:hover {
+        border: 1px solid #171A5B;
+    }
+
+    header {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    header .catalog-but,
+    header .about-but {
+        display: none;
+    }
+
+    header .reg {
+        margin-left: 60%;
+    }
+
+    header svg {
+        flex: 0 0 10%;
+    }
+
+    footer {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+}
+
+@media(min-width:481px) and (max-width:1000px) {
+
+    header .catalog-but,
+    header .about-but {
+        display: none;
+    }
+
+    header .reg {
+        margin-left: 60%;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-flow: column wrap;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.3s ease-in-out;
+        padding: 0;
+        text-align: left;
+        transform: translateY(-100%);
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 50px;
+        margin-left: 0;
+        margin-right: 15%;
+    }
+
+    .mobile-menu ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1 1 100%;
+        list-style-type: none;
+        height: 30px;
+        border: 1px solid #171A5B;
+        margin-bottom: 5%;
+        cursor: pointer;
+    }
+
+    .open {
+        transform: translateY(0);
+    }
+
+    .menu-button {
+        display: block;
+        height: 40px;
+        width: 40px;
+        margin-top: 0;
+        margin-left: 1%;
+        margin-right: 1%;
+        border: none;
+        background-color: white;
+        background-image: url(pics/menu-svgrepo-com.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .menu-button:hover {
+        border: 1px solid #171A5B;
+    }
+
+    .mobile-menu .close-menu {
+        display: block;
+        /* flex: 1 1 100%; */
+        height: 40px;
+        width: 40px;
+        background-image: url(pics/close-ellipse-svgrepo-com.svg);
+        background-repeat: no-repeat;
+        background-color: white;
+        border: none;
+        background-size: 100%;
+        cursor: pointer;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+
+    .mobile-menu .close-menu:hover {
+        border: 1px solid #171A5B;
+    }
+
+    header svg {
+        flex: 0 0 8%;
+    }
+}

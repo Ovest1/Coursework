@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <book>
+        <name>1984</name>
+        <image>pics/1984.jpg</image>
+        <price>11BYN</price>
+        <author>Джордж Оруэлл</author>
+    </book>
+    <book>
+        <name>Дневник Памяти</name>
+        <image>pics/nevnik.jpg</image>
+        <price>12BYN</price>
+        <author>Николас Спаркс</author>
+    </book>
+    <book>
+        <name>Портрет Дориана Грея</name>
+        <image>pics/dorian.jpg</image>
+        <price>10BYN</price>
+        <author>Оскар Уайльд</author>
+    </book>
+    <book>
+        <name>Грозовой Перевал</name>
+        <image>pics/pereval.jpg</image>
+        <price>9BYN</price>
+        <author>Эмили Бронте</author>
+    </book>
+    <book>
+        <name>Три Товарища</name>
+        <image>pics/tre.jpg</image>
+        <price>14BYN</price>
+        <author>Эрих Мария Ремарк</author>
+    </book>
+    <book>
+        <name>Мартин Иден</name>
+        <image>pics/iden.jpg</image>
+        <price>10BYN</price>
+        <author>Джек Лондон</author>
+    </book>
+</data>
