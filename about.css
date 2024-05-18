@@ -7,19 +7,93 @@
     background-image: url(pics/library-book-bookshelf-read.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
     color: rgb(218, 216, 216);
-}
-.about h1{
-    /* display: inline; */
+    }
+    .about h1{
     flex: 1 1 100%;
     width: 100%;
     text-align: center;
-}
-.about p{
+    }
+    .about p{
     font-size: 20pt;
     background-color: rgba(4, 3, 1,0.5);
     flex: 1 1 100%;
     text-align: center;
-    /* color: rgb(200, 200, 200); */
-}
+    }
+    
+    .blog-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    }
+    
+    .blog-post {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    }
+    
+    .blog-post h2 {
+    margin-top: 0;
+    }
+    
+    .blog-post p {
+    line-height: 1.5;
+    }
+    
+    .blog-post a {
+    color: #333;
+    text-decoration: none;
+    }
+    
+    .blog-post a:hover {
+    color: #000;
+    }
+    
+    .comments {
+    margin-top: 20px;
+    }
+    
+    .comments h3 {
+    margin-top: 0;
+    }
+    
+    .comments ul {
+    list-style-type: none;
+    padding: 0;
+    }
+    
+    .comments li {
+    margin-bottom: 10px;
+    }
+    
+    .post-image {
+    float: right;
+    width: 200px;
+    height: 300px;
+    margin-left: 50px;
+    overflow: hidden;
+    }
+    
+    .post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    
+    @keyframes rotate {
+    0% {
+    transform: rotateY(0deg);
+    }
+    100% {
+    transform: rotateY(360deg);
+    }
+    }
+    
+    .post-image {
+    transition: transform 0.5s ease;
+    }
+    
+    .post-image:hover {
+    animation: rotate 2s ease-in-out;
+    }

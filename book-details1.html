@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+</head>
+<body>
+    <div class="book-details">
+        <img id="book-image" src="" alt="Book Cover">
+        <h1 id="book-title"></h1>
+    </div>
+
+    <script>
+        // Получаем параметр из URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const bookTitle = urlParams.get('book');
+
+        // Загружаем изображение на основе названия книги
+        const bookImage = document.getElementById('book-image');
+        bookImage.src = 'c:/Users/cladc/Desktop/Курсовая работа/pics/pereval.jpg';
+
+        // Устанавливаем заголовок страницы
+        const bookTitleElement = document.getElementById('book-title');
+        bookTitleElement.textContent = bookTitle;
+    </script>
+</body>
+</html>

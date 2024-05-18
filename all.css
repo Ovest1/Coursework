@@ -296,3 +296,54 @@ footer p {
         flex: 0 0 8%;
     }
 }
+
+/* Анимация кнопки меню */
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .menu-button:hover {
+    animation: rotate 1s infinite linear;
+  }
+ 
+  .cls-1 {
+    animation: scaleIn 1s ease-in-out;
+  }
+
+  .menu-button, .close-menu, .catalog-but, .about-but, .reg {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menu-button:hover, .close-menu:hover, .catalog-but:hover, .about-but:hover, .reg:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .menu-button:hover {
+    animation: rotate 1s infinite linear;
+  }
+  
+  /* Анимация мобильного меню */
+  @keyframes slideIn {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+  }
+  
+  .mobile-menu {
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  /* Анимация логотипа */
+  @keyframes scaleIn {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+  }
+  
+  .cls-1 {
+    animation: scaleIn 1s ease-in-out;
+  }
