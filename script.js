@@ -16,3 +16,4 @@ function home(){
 function reg(){
     window.location.href = "reg.html";
 }
+
